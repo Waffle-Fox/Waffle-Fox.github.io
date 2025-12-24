@@ -1,0 +1,30 @@
+.channel-link {
+    color: rgb(0, 153, 255);
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.video-link {
+    display: inline-block;
+    cursor: pointer;
+    width: 400px;
+    padding: 0;
+}
+
+.tutorial-thumbnail {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: block;
+}
+
+.video-title {
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 1.5rem;
+} 
