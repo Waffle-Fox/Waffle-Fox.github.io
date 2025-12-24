@@ -222,6 +222,7 @@ body {
     background: linear-gradient(180deg, rgba(124,58,237,0.03), rgba(45,212,191,0.03));
 }
 
+
 .link-hover:focus {
     outline: 2px solid rgba(124,58,237,0.35);
     outline-offset: 3px;
