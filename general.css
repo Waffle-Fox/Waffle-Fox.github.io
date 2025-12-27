@@ -1,11 +1,15 @@
 :root {
     --bg: #0b1a31;
-    --panel: #0b0f13;
+    --panel: #111921;
     --muted: #94a3b8;
     --text: #e6eef8;
     --accent: #2dd4bf;
     --accent2: #7c3aed;
-    --accent3: #fb923c;
+    --accent3: rgb(255, 255, 0);
+    --accent4: rgb(167, 210, 50);
+    --accent5: #d84343;
+    --accent6: #d57f39;
+
 
     /* layout variables */
     --sidebar-width: 240px;
@@ -61,7 +65,6 @@ body {
     display: block;
 }
 
-/* Sidebar (left) */
 .sidebar {
     position: fixed;
     left: 0;
@@ -69,8 +72,8 @@ body {
     bottom: 0;
     width: var(--sidebar-width);
     background: var(--panel);
-    border-right: 1px solid rgba(255,255,255,0.03);
     padding: 2.25rem 1.25rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
 }  
 
 .sidebar-inner {
@@ -93,6 +96,7 @@ body {
     text-decoration: none;
     padding: .3rem 0;
     transition: color .12s ease;
+    margin-bottom: 24px;
 }
 
 .sidebar-nav a:hover {
@@ -128,7 +132,7 @@ body {
     right: 0;
     height: var(--topbar-height);
     background: var(--panel);
-    border-bottom: 1px solid rgba(255,255,255,0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 50;
 } 
 
@@ -174,7 +178,7 @@ body {
 /* Big, minimal hero */
 .site-title {
     font-family: "Alfa Slab One", serif;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 100;
     letter-spacing: 0.05em;
     margin-bottom: .4rem;
@@ -197,38 +201,9 @@ body {
     color: #cbd5e1;
     padding: 0 0 30px 0;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
 }
-
-/* Reusable link hover/card effect (shared utility) */
-.link-hover {
-    display: inline-block;
-    padding: .75rem 1rem;
-    border-radius: 8px;
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.03);
-    color: var(--text);
-    text-decoration: none;
-    transition: transform .16s ease, box-shadow .16s ease, background-color .12s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.link-hover:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(45,52,67,0.6);
-    border-color: rgba(255,255,255,0.04);
-    background: linear-gradient(180deg, rgba(124,58,237,0.03), rgba(45,212,191,0.03));
-}
-
-
-.link-hover:focus {
-    outline: 2px solid rgba(124,58,237,0.35);
-    outline-offset: 3px;
-} 
-
-
 
 /* Sections: center main contents with flexbox */
 .section-box {
@@ -237,14 +212,13 @@ body {
     align-items: center;
     gap: 1rem;
     text-align: center;
-    margin-bottom: 60px;
-    /* make the border and padding consistent and responsive */
-    width: 100%;               /* span the full width of the parent container */
-    box-sizing: border-box;    /* include padding in width calculations */
+    margin: 0 150px 60px 150px;
+    width: calc(100% - 300px); 
+    max-width: 100%;
+    box-sizing: border-box; 
     border: 2px solid rgba(194, 194, 194, 0.39);
     border-radius: 12px;
     padding: 2rem;
-    color: #98abd0;
     background-color: #19243c;
 }
 
@@ -263,32 +237,10 @@ body {
     }
 }
 
-/* Thumbs use accent gradients */
-.thumb {
-    height: 120px;
-    border-radius: 6px;
-    margin-bottom: .8rem;
-    background: linear-gradient(135deg, var(--accent2), var(--accent));
-}
-
-/* Badge with accent gradient */
 .site-title + .site-sub + .muted {
     position: relative;
 }
 
-.badge {
-    position: absolute;
-    right: 0;
-    top: -34px;
-    background: linear-gradient(90deg, var(--accent), var(--accent3));
-    color: #041014;
-    padding: .25rem .6rem;
-    border-radius: 999px;
-    font-size: .8rem;
-    box-shadow: 0 6px 18px rgba(2,6,23,0.6);
-}
-
-/* Small footer */
 .site-footer {
     padding: 3rem 0;
     text-align: center;

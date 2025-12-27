@@ -1,4 +1,4 @@
-.projects-list {
+.aa-list {
     list-style: none;
     padding-left: 0;
     margin: 0;
@@ -8,20 +8,20 @@
     column-gap: 8rem;
 }
 
-.projects-list > * {
+.aa-list > * {
     flex: 1 1 100%; /* full width by default (1 column) */
 }
 
 /* use two columns only on wider screens to avoid wrapping as viewport shrinks */
 @media (min-width: 960px) {
-    .projects-list > * {
+    .aa-list > * {
         flex-basis: calc((100% - 8rem) / 2); /* two columns with gap accounted for */
     }
 }
 
 /* expand the list edges only on very large screens */
 @media (min-width: 1200px) {
-    .section-box .projects-list {
+    .section-box .aa-list {
         width: calc(100% + 8rem);
         margin-left: -4rem;
         margin-right: -4rem;
@@ -32,7 +32,7 @@
     }
 } 
 
-.project-link {
+.aa-text {
     display: block;
     padding: 1.3rem;
     border-radius: 8px;
@@ -47,39 +47,38 @@
     margin-bottom: 0;
 } 
 
-.project-link::before {
+.aa-text::before {
     content: "";
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     width: 8px;
-    background: linear-gradient(180deg, var(--accent5), var(--accent6));
+    background: linear-gradient(180deg, var(--accent3), var(--accent4));
 }
 
-.project-link:hover {
+.aa-text:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 30px rgba(45,52,67,0.6);
     border-color: rgba(255, 255, 255, 0.19);
     background: linear-gradient(180deg, rgba(124,58,237,0.03), rgba(45,212,191,0.03));
 }
 
-.project-link:focus {
+.aa-text:focus {
     outline: 2px solid rgba(124,58,237,0.35);
     outline-offset: 3px;
 }
 
 /* Small screens: stack into a single column (no wrapping) */
 @media (max-width: 959px) {
-    .projects-list {
+    .aa-list {
         flex-direction: column;
         flex-wrap: nowrap;
         row-gap: 1rem;
         column-gap: 1rem;
     }
-    .projects-list > * {
+    .aa-list > * {
         flex-basis: 100%;
         max-width: none;
     }
 } 
-

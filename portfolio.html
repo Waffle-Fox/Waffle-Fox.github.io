@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="tutorial.css">
 		<link rel="stylesheet" href="about-me.css">
 		<link rel="stylesheet" href="contact.css">
+		<link rel="stylesheet" href="programming-skills.css">
+		<link rel="stylesheet" href="academic-achievements.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">	
@@ -34,8 +36,8 @@
                 <nav class="sidebar-nav">
 					<a href="#about-me" class="sidebar-title">About Me</a>
 					<a href="#programming-skills" class="sidebar-title">Programming Skills</a>
+					<a href="#projects" class="sidebar-title">Projects</a>
 					<a href="#academic-achievements" class="sidebar-title">Academic Achievements</a>
-                    <a href="#projects" class="sidebar-title">Projects</a>
                     <a href="#tutorials" class="sidebar-title">Tutorials</a>
                     <a href="#contact" class="sidebar-title">Contact</a>
                 </nav>
@@ -51,27 +53,59 @@
 						<p class="site-sub">It was created as part of a self-directed learning program</p>
 					</section>
 
-					<section id="programming-skills" class="programming-skills section-box">
-						<p class="section-title">Programming Skills</p>
-						<ul class="projects-list">
-							<li><a class="project-link" href="#" target="_blank">text</a></li>
-							<li><a class="project-link" href="#" target="_blank">text</a></li>
-							<li><a class="project-link" href="#" target="_blank">text</a></li>
-							<li><a class="project-link" href="#" target="_blank">text</a></li>
-						</ul>				</section>
-						<section id="academic-achievements" class="academic-achievements section-box">
-						<p class="section-title">Academic Achievements</p>
-						<ul class="projects-list">
-							<li><a class="project-link" href="#" target="_blank">text</a></li>
-							<li><a class="project-link" href="#" target="_blank">text</a></li>
-							<li><a class="project-link" href="#" target="_blank">text</a></li>
-							<li><a class="project-link" href="#" target="_blank">text</a></li>
-						</ul>				
-					</section>
-
 					<section id="about-me" class="about-me section-box">
 						<p class="section-title">About Me</p>
-						<p class="about-me">CKHS student</p>
+						<p class="about-me-text">你好！我是 Waffle / Jimmu。我是一名熱衷於探索程式設計的學習者，目前正專注於 HTML、CSS、Python 與 C++。除了正在進行的個人網頁開發，我也正全力投入 APCS 的準備，希望在程式邏輯與演算法上更進一步。在學業上，我憑藉著對英文、數學的熱愛，取得了些許競賽、檢定的亮眼成績。除了程式開發，我同時也是一名的音樂遊戲愛好者，主攻 Maimai 以及Osu!mania。我很期待能認識更多擁有類似興趣或專業的朋友，非常歡迎與我聯絡、一起交流！</p>
+					</section>
+
+					<section id="programming-skills" class="programming-skills section-box">
+						<p class="section-title">Programming Skills</p>
+						<ul class="ps-list">
+						<li>
+							<article class="ps-text">
+								<div class="skill-name">Python</div>
+								<div class="skill-progress">
+									<div class="skill-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30">
+										<div class="skill-fill" style="width:30%"></div>
+									</div>
+									<div class="skill-percent">30%</div>
+								</div>
+							</article>
+						</li>
+						<li>
+							<article class="ps-text">
+								<div class="skill-name">C++</div>
+								<div class="skill-progress">
+									<div class="skill-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30">
+										<div class="skill-fill" style="width:30%"></div>
+									</div>
+									<div class="skill-percent">30%</div>
+								</div>
+							</article>
+						</li>
+						<li>
+							<article class="ps-text">
+								<div class="skill-name">HTML</div>
+								<div class="skill-progress">
+									<div class="skill-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+										<div class="skill-fill" style="width:60%"></div>
+									</div>
+									<div class="skill-percent">60%</div>
+								</div>
+							</article>
+						</li>
+						<li>
+							<article class="ps-text">
+								<div class="skill-name">CSS</div>
+								<div class="skill-progress">
+									<div class="skill-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40">
+										<div class="skill-fill" style="width:40%"></div>
+									</div>
+									<div class="skill-percent">40%</div>
+								</div>
+							</article>
+						</li>
+						</ul>				
 					</section>
 
 					<section id="projects" class="projects section-box">
@@ -87,29 +121,44 @@
 							<li><a class="project-link" href="no-project.html" target="_blank">No other projects yet</a></li>
 						</ul>
 					</section>
+					
+					<section id="academic-achievements" class="academic-achievements section-box">
+						<p class="section-title">Academic Achievements</p>
+						<ul class="aa-list">
+							<li><p class="aa-text">多益 980分</p></li>
+							<li><p class="aa-text">APCS 觀念四 實作三</p></li>
+							<li><p class="aa-text">AMC12 118.5分</p></li>
+							<li><p class="aa-text">台大微積分先修</p></li>
+						</ul>				
+					</section>
 
 					<section id="tutorials" class="tutorials section-box">
 						<p class="section-title">Coding Tutorials I Watched</p>
-						<ul>
-							<p class="video-title">HTML & CSS Full Course - Beginner to Pro</p>
-							<span class="video-title">by </span>
-							<a href="https://www.youtube.com/@SuperSimpleDev" target="_blank" class="channel-link">
-								<span>SuperSimpleDev</span>
-							</a>
-							<br>
-							<a href="https://www.youtube.com/watch?v=G3e-cpL7ofc" target="_blank" class="video-link link-hover">
-								<img src="pics/tutorial-thumbnail-1.avif" class="tutorial-thumbnail">
-							</a>	
-							<br><br>
-							<p class="video-title">HTML & CSS Full Course for free 🌎</p>
-							<span class="video-title">by </span>
-							<a href="https://www.youtube.com/@BroCodez" target="_blank" class="channel-link	">
-								<span>brocode</span>
-							</a>
-							<br>
-							<a href="https://www.youtube.com/watch?v=G3e-cpL7ofc" target="_blank" class="video-link link-hover">
-								<img src="pics/tutorial-thumbnail-2.avif" class="tutorial-thumbnail">
-							</a>
+						<ul class="tutorial-list">
+							<li>
+								<div class="tutorial-item">
+									<p class="video-title">HTML & CSS Full Course - Beginner to Pro</p>
+									<span class="video-title">by </span>
+									<a href="https://www.youtube.com/@SuperSimpleDev" target="_blank" class="channel-link">
+										<span>SuperSimpleDev</span>
+									</a>
+									<a href="https://www.youtube.com/watch?v=G3e-cpL7ofc" target="_blank" class="video-link pic-link-hover">
+										<img src="pics/tutorial-thumbnail-1.avif" class="tutorial-thumbnail" alt="Tutorial 1 thumbnail">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="tutorial-item">
+									<p class="video-title">HTML & CSS Full Course for free 🌎</p>
+									<span class="video-title">by </span>
+									<a href="https://www.youtube.com/@BroCodez" target="_blank" class="channel-link">
+										<span>brocode</span>
+									</a>
+									<a href="https://youtu.be/HGTJBPNC-Gw" target="_blank" class="video-link pic-link-hover">
+										<img src="pics/tutorial-thumbnail-2.avif" class="tutorial-thumbnail" alt="Tutorial 2 thumbnail">
+									</a>
+								</div>
+							</li>
 						</ul>
 					</section>
 
@@ -117,24 +166,20 @@
 						<p class="section-title">Contact</p>
 						<div class="contact-box">
 							<img class="contact-icon" src="pics/gmail-icon.avif">
-							<span class="contact-text">Email: ck11300431@gl.ck.tp.edu.tw</span>
+							<span class="contact-text">Email : ck11300431@gl.ck.tp.edu.tw</span>
 						</div>
 						<div class="contact-box">
 							<img class="contact-icon" src="pics/discord-icon.jpg">
-							<span class="contact-text">Discord: itz_jimmu_tw</span>
+							<span class="contact-text">Discord : itz_jimmu_tw</span>
 						</div>
 						<div class="contact-box">
 							<img class="contact-icon" src="pics/ig-icon.jpg">
-							<span class="contact-text">Instagram: waffle_fox_tw</span>
+							<span class="contact-text">Instagram : waffle_fox_tw</span>
 						</div>
 						<div class="contact-box">
 							<img class="contact-icon" src="pics/line-icon.png">
-							<span class="contact-text">Line ID: jim2130</span>
+							<span class="contact-text">Line ID : jim2130</span>
 						</div>
-						
-						
-						
-						
 					</section>
 				</div>
 			</div>
